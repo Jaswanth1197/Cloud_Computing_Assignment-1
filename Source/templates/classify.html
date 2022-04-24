@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<form action = '/classify' method = 'POST'>
+    <p>Title:</p>
+    <p><input type = 'text' name = 'title' style = 'width:50%' value = '{{title}}' required/></p>
+    <p>Description:</p>
+    <textarea type = 'textarea' name = 'description' style = 'height:100%; width:50%' required>{{description}}</textarea>
+    <p><input type = 'submit' value = 'search'/></p>
+</form>
+{% endblock %}
